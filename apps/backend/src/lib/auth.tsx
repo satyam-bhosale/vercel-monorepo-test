@@ -5,7 +5,8 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 
 const auth = betterAuth({
     baseURL: {
-        allowedHosts: ["vercel-monorepo-test-backend-*.vercel.app"]
+        allowedHosts: ["vercel-monorepo-test-backend-*.vercel.app"],
+        protocol: "https"
     },
     basePath: "/auth",
     database: drizzleAdapter(db,{
