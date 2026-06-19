@@ -8,6 +8,8 @@
         ],
         "rootDir": ".",
         "outDir": "dist",
+        "jsx": "react-jsx",
+        "jsxImportSource": "hono/jsx",
         "paths": {
             "@axcelero/backend/*": [
                 "./src/*"
