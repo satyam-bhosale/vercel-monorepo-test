@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "@axcelero/utils": "workspace:*",
+    "@neondatabase/serverless": "^1.1.0",
     "argon2": "^0.44.0",
+    "dotenv": "^17.4.2",
     "hono": "^4.12.26"
   }
 }
