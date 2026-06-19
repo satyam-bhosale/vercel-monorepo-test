@@ -1,0 +1,13 @@
+{
+  "name": "axcelero",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:backend": "turbo run dev --filter=@axcelero/backend",
+    "build:backend": "turbo run build --filter=@axcelero/backend",
+    "build:utils": "turbo run build --filter=@axcelero/utils"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3"
+}

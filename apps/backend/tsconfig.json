@@ -1,0 +1,22 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "types": [
+            "node"
+        ],
+        "rootDir": ".",
+        "outDir": "dist",
+        "paths": {
+            "@axcelero/backend/*": [
+                "./src/*"
+            ]
+        },
+    },
+    "include": ["src"],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
