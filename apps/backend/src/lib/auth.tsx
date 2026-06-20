@@ -1,7 +1,12 @@
-import db from "@axcelero/backend/db/index.js";
-import { account, session, user, verification } from "@axcelero/backend/db/schemas/auth.js";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { configDotenv } from "dotenv";
+import db from "../db/index.js";
+import { account, session, user, verification } from "../db/schemas/auth.js";
+
+if(!process.env.VERCEL){
+    configDotenv({path: ".env"})
+}
 
 const auth = betterAuth({
     baseURL: {

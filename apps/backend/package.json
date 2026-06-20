@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/app.ts",
-    "build": "tsc & tsc-alias"
+    "dev": "cross-env NODE_ENV=development tsx watch src/server.ts",
+    "build": "tsc & tsc-alias",
+    "start": "cross-env NODE_ENV=production node dist/src/server.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -16,8 +17,10 @@
   },
   "dependencies": {
     "@axcelero/utils": "workspace:*",
+    "@hono/node-server": "^2.0.5",
     "@neondatabase/serverless": "^1.1.0",
     "argon2": "^0.44.0",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.4.2",
     "hono": "^4.12.26"
   }

@@ -5,6 +5,7 @@
   "scripts": {
     "dev:backend": "turbo run dev --filter=@axcelero/backend",
     "build:backend": "turbo run build --filter=@axcelero/backend",
+    "start:backend": "turbo run start --filter=@axcelero/backend",
     "build:utils": "turbo run build --filter=@axcelero/utils"
   },
   "license": "ISC",
