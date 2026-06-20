@@ -8,6 +8,7 @@ const auth = betterAuth({
         allowedHosts: ["vercel-monorepo-test-backend-*.vercel.app"],
         protocol: "https"
     },
+    secret: process.env.BETTER_AUTH_SECRET!,
     basePath: "/auth",
     database: drizzleAdapter(db,{
         provider: 'pg',
